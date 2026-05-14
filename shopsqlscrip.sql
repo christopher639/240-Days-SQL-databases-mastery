@@ -115,14 +115,26 @@ products.selling_price,
 products.quantity;
 
 
+create table users(
+id int auto_increment primary key,
+fullname varchar(100) not null,
+email varchar(255) unique not null,
+role enum('customers','admin')
+);
 
 
+alter table sales 
+add column user_id int not null;
 
 
-
-
-
-
+select 
+users.id,
+users.fullname,
+users.email,
+users.role
+from users
+left join sales
+on users.id = sales.user_id
 
 
 
