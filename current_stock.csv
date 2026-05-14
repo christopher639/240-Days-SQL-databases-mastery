@@ -1,0 +1,5 @@
+id,product_name,selling_price,Original_quantity,sold,remaining,Amount
+1,pen,15.00,5,4,1,60.00
+2,Calculator,1500.89,50,48,2,72042.72
+3,Rubber,13.90,5,4,1,55.60
+4,Shapener,45.23,89,76,13,3437.48
