@@ -136,7 +136,26 @@ from users
 left join sales
 on users.id = sales.user_id
 
+SELECT  
+    users.id,
+    users.fullname,
+    users.email,
+    products.product_name,
+    products.selling_price,
+    SUM(sales.quantity) AS Sold,
+    products.selling_price * SUM(sales.quantity) AS Total
 
+FROM users
+INNER JOIN sales
+    ON users.id = sales.user_id
+LEFT JOIN products
+    ON products.id = sales.product_id
+GROUP BY
+    users.id,
+    users.fullname,
+    users.email,
+    products.product_name,
+    products.selling_price;
 
 
 
