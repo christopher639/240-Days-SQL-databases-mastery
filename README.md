@@ -1,5 +1,7 @@
 ﻿# 240-Days-SQL-databases-mastery , AI aside now
+ 
 **  - Day one - Wenesday  14th May 2026**
+
     - Revisited sql command to create tables , insert into tables 
     - Leanrt and understood inner joins one of the complex thing I havent inderstood for long 
     - Revisiting the DML,DDL,etc
